@@ -1,0 +1,8 @@
+# ignore VisualStudioCode folder
+.vscode/
+
+# ignore eclipse project description file
+.project
+
+# ignore OS-generated
+Thumbs.db
