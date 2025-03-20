@@ -12,7 +12,7 @@ Add-Type -AssemblyName PresentationCore,PresentationFramework,WindowsBase,System
 <# gui #>
 
 # load xaml file (gui)
-[xml]$xaml = Get-Content -Path .\dokey.xaml
+[xml]$xaml = Get-Content -Path "$PSScriptRoot\dokey.xaml"
 $reader = (New-Object System.Xml.XmlNodeReader $xaml)
 $window = [Windows.Markup.XamlReader]::Load($reader)
 
